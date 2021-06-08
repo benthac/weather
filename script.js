@@ -1,4 +1,7 @@
 let weatherSearch = function() {
-    fetch("https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={ 54654b2970f4ff24c637b2ecba8f2f9f}");
-
-};
+    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=54654b2970f4ff24c637b2ecba8f2f9f")
+    .then(function(response) {
+    response.json().then(function(data) {
+        console.log(data);
+    });
+    )};
